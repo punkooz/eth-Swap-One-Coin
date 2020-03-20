@@ -6,9 +6,16 @@ contract EthSwap {
   
   string public name = "Instant One-Coin Swap";
   Token public token;
-  uint public rate = 100;
+  uint public rate = 100; // 1 eth = 100 token
 
   event TokenPurchased(
+    address account,
+    address token,
+    uint amount,
+    uint rate
+  );
+
+  event TokenSold(
     address account,
     address token,
     uint amount,
@@ -31,6 +38,24 @@ contract EthSwap {
 
     //Emit an event
     emit TokenPurchased(msg.sender, address(token), tokenAmount, rate);
+  }
+
+  function sellTokens(uint _amount) public {
+    //User cant sell more tokens than they have
+    require(token.balanceOf(msg.sender) >= _amount, "sender deosn't have enough tokens");
+
+    //Calculate the amount of ether to redeem
+    uint etherAmount = _amount / rate;
+
+    // Require that ethSwap has enough Ether
+    require(address(this).balance >= etherAmount, "smart contract doesn't have enough ether");
+     
+    //Perform sale
+    token.transferFrom(msg.sender, address(this), _amount);
+    msg.sender.transfer(etherAmount);
+    
+    //Emit event
+    emit TokenSold(msg.sender, address(token), _amount, rate);
   }
 
 }
