@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/eth-Swap-One-Coin/static/css/main.18de8aef.chunk.css",
+    "main.js": "/eth-Swap-One-Coin/static/js/main.c816f49c.chunk.js",
+    "main.js.map": "/eth-Swap-One-Coin/static/js/main.c816f49c.chunk.js.map",
+    "runtime-main.js": "/eth-Swap-One-Coin/static/js/runtime-main.fdc8ad27.js",
+    "runtime-main.js.map": "/eth-Swap-One-Coin/static/js/runtime-main.fdc8ad27.js.map",
+    "static/css/2.85f22f3a.chunk.css": "/eth-Swap-One-Coin/static/css/2.85f22f3a.chunk.css",
+    "static/js/2.85a780ff.chunk.js": "/eth-Swap-One-Coin/static/js/2.85a780ff.chunk.js",
+    "static/js/2.85a780ff.chunk.js.map": "/eth-Swap-One-Coin/static/js/2.85a780ff.chunk.js.map",
+    "index.html": "/eth-Swap-One-Coin/index.html",
+    "precache-manifest.1ceca86e7c201fb6c8d952bd8b81762f.js": "/eth-Swap-One-Coin/precache-manifest.1ceca86e7c201fb6c8d952bd8b81762f.js",
+    "service-worker.js": "/eth-Swap-One-Coin/service-worker.js",
+    "static/css/2.85f22f3a.chunk.css.map": "/eth-Swap-One-Coin/static/css/2.85f22f3a.chunk.css.map",
+    "static/css/main.18de8aef.chunk.css.map": "/eth-Swap-One-Coin/static/css/main.18de8aef.chunk.css.map",
+    "static/js/2.85a780ff.chunk.js.LICENSE.txt": "/eth-Swap-One-Coin/static/js/2.85a780ff.chunk.js.LICENSE.txt",
+    "static/media/memecoin.png": "/eth-Swap-One-Coin/static/media/memecoin.766c7aca.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fdc8ad27.js",
+    "static/css/2.85f22f3a.chunk.css",
+    "static/js/2.85a780ff.chunk.js",
+    "static/css/main.18de8aef.chunk.css",
+    "static/js/main.c816f49c.chunk.js"
+  ]
+}
